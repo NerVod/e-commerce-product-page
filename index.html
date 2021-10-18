@@ -9,11 +9,7 @@
   
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
 
@@ -36,23 +32,65 @@
 </nav>
 <div class="ligneNav"></div>
 
-  Sneaker Company
+<div class="partieCentre">
 
-  Fall Limited Edition Sneakers
+  <div class="photosGauche">
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+    <div class="mainPhoto"></div>
+    <div class="photoMini">
+      <div class=" miniature mini1"></div>
+      <div class=" miniature mini2"></div>
+      <div class=" miniature mini3"></div>
+      <div class=" miniature mini4"></div>
+    </div>
+  </div>
 
-  $125.00
-  50%
-  $250.00
 
-  0
-  Add to cart
+  <div class="partieDroite">
+    <h4>Sneaker Company</h4>
+
+    <h1>Fall Limited Edition Sneakers</h1>
+
+    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+    <div class="prixArticle">
+        <h2>$125.00</h2>
+        <div class="reduction"><p class="pourcentage">50%</p></div>
+    </div>
+    <div class="prixBarre">$250.00</div>
+    
+    <div class="boutonsAchat">
+      <div class="selecteurNombre">
+
+        <div class="decrement">
+          <div onclick="decrementClick()"> - </div>
+        </div>
+        
+        <h3 class="center" id="counter-label"> 0 </h3>
+        
+        <div class="increment">
+          <div onclick="incrementClick()"> + </div>
+        </div>
+      
+      </div>
+
+      <div class="ajoutPanier">
+        <div class="caddieCard"><img src="images/kart4.png" alt="logo" srcset=""></div>
+        <p class="addCard">Add to cart</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">NerVod</a>.
   </div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
