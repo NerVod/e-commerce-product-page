@@ -36,13 +36,22 @@
 
   <div class="photosGauche">
 
-    <div class="mainPhoto"></div>
-    <div class="photoMini">
-      <div class=" miniature mini1"></div>
-      <div class=" miniature mini2"></div>
-      <div class=" miniature mini3"></div>
-      <div class=" miniature mini4"></div>
-    </div>
+    <div id="grandePhoto" class="mainPhoto"></div>
+
+    <ul class="photoMini">
+      <li class="thumbNail">
+         <img src ="images/image-product-1-thumbnail.jpg" class="miniature mini1" onclick="changeImage('grandePhoto', 'image-product-1.jpg');" alt="">
+      </li>
+      <li class="thumbNail">
+         <img src ="images/image-product-2-thumbnail.jpg" class="miniature mini2" onclick="changeImage('grandePhoto', 'image-product-2.jpg');" alt="">
+      </li>
+      <li class="thumbNail">
+        <img src ="images/image-product-3-thumbnail.jpg" class="miniature mini3" onclick="changeImage('grandePhoto', 'image-product-3.jpg');" alt="">
+      </li>
+      <li class="thumbNail">
+         <img src ="images/image-product-4-thumbnail.jpg" class="miniature mini4" onclick="changeImage('grandePhoto', 'image-product-4.jpg');" alt="">
+      </li>
+    </ul>
   </div>
 
 
