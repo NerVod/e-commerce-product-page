@@ -87,75 +87,73 @@ nav li {
   height: 600px;
   width: 800px;
   margin: 60px auto;
-  margin-right: 40px;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
 }
 
-.mainPhoto {
+ #div-photo{
   height: 450px;
   width: 450px;
   margin: 10px auto;
   margin-bottom: 20px;
-  border-radius: 15px 15px;
+  border-radius: 15px 15px; 
   background-image: url(images/image-product-1.jpg);
-  background-size: cover;  
+  background-size: cover;   
 }
 
-.photoMini {
-  height: 100px;
+.grandePhoto {
+  height: 450px;
   width: 450px;
-  margin: 5px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 15px 15px;
+
 }
 
-.miniature {
-  height: 85px;
-  width: 85px;
-  border-radius: 10px 10px;
+#picto{
+  height: 125px;
+  width: 550px;
   
 }
 
+.photoMini {
+  display: flex;
+  height: 100px;
+  width: 450px;
+  margin: 5px auto;
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
 .thumbNail {
-    list-style-type: none;
+list-style-type: none;
+}
+.miniature {
+  height: 85px;
+  width: 87px;
+  border-radius: 10px 10px;
+  margin: 0 18px;
+  
 }
 
-
-/* .mini1 {
-  background-image: url(images/image-product-1-thumbnail.jpg);
-  background-size: cover 
-} */
-
-/* .mini2 {
-  background-image: url(images/image-product-2-thumbnail.jpg);
-  background-size: cover;
-}
-.mini3 {
-  background-image: url(images/image-product-3-thumbnail.jpg);
-  background-size: cover;
-}
-.mini4 {
-  background-image: url(images/image-product-4-thumbnail.jpg);
-  background-size: cover;
-} */
 
 /* ---------PARTIE DROITE DESCRIPTION PRODUIT------- */
 
 .partieDroite {
   height: 600px;
   width: 450px;
-  margin: 60px auto;
+  margin: 45px auto;
   padding: 30px;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 h4 {
   color: hsl(26, 100%, 55%);
   text-transform: uppercase;
   font-size: 14px;
-  margin-top: 45px;
+  margin-top: 55px;
 }
 
 h1 {

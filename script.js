@@ -1,48 +1,18 @@
-// changer l'image principale
+// fonction : affichage d'une image dans un div 
 function ChangeImage(divId,imageNom){
-    let divId; /* id du div qui va contenir la grande image */
-    let imageNom; /* nom de la grande image à afficher*/
-    let imageRep = 'images/'; /* repertoire contenant les images (pour ne pas avoir à l'écrire à chaque fois dans la fonction */
-    /* on met l'image dans le div */
-    let contenuhtml = '<img class="mainPhoto" src="'+imageRep+imageNom+'" alt="" onclick="ViderDiv(\'grandePhoto\');" />';
+    var divId; // id du div qui va contenir la grande image 
+    var imageNom; // nom de la grande image 
+    var imageRep = './images/'; /* repertoire contenant les images (pour ne pas avoir à l'écrire à chaque fois dans la fonction 
+     on met l'image dans le div */
+    var contenuhtml = '<img class="grandePhoto" src="'+imageRep+imageNom+'" alt="" onclick="ViderDiv(\'div-photo\');" />';
     document.getElementById(divId).innerHTML = contenuhtml;
 }	
-/* fonction : vidage du contenu d'un div */
+// fonction : vidage du contenu d'un div 
 function ViderDiv(divId){
-    let divId; /* id du div à vider */
-    /* on vide le div */
+    var divId; // id du div à vider 
+    // on vide le div 
     document.getElementById(divId).innerHTML = '';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // selecteur click counter
