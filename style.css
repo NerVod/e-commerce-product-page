@@ -40,6 +40,13 @@ body {
 .navItems {
   display: flex;
   list-style-type: none;
+  
+}
+
+.navItems>li:hover {
+  cursor: pointer;
+  border-bottom: 4px solid hsl(26, 100%, 55%);
+  padding-bottom: 50px;
 }
 
 nav li {
@@ -57,7 +64,7 @@ nav li {
 
 .caddie {
   height: 20px;
-  margin: 20px 30px;
+  margin: 20px 10px;
 }
 
 .avatar {
@@ -70,6 +77,7 @@ nav li {
   width: 1150px;
   background-color: hsl(220, 14%, 75%);
   margin: 0 auto;
+  opacity: 0.6;
 }
 
 /* **************************** partie centrale ************************************** */
@@ -130,12 +138,43 @@ nav li {
 .thumbNail {
 list-style-type: none;
 }
+
+.thumbNail:hover {
+  cursor: pointer;
+}
+
 .miniature {
   height: 85px;
   width: 87px;
   border-radius: 10px 10px;
   margin: 0 18px;
   
+}
+
+#picto1 {
+  background-image: url(images/image-product-1-thumbnail.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#picto2 {
+  background-image: url(images/image-product-2-thumbnail.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#picto3 {
+  background-image: url(images/image-product-3-thumbnail.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#picto4 {
+  background-image: url(images/image-product-4-thumbnail.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.selected {
+  border: 1px solid hsl(26, 100%, 55%);
+  opacity: 0.7;
 }
 
 
@@ -147,6 +186,7 @@ list-style-type: none;
   margin: 45px auto;
   padding: 30px;
   margin-right: 60px;
+  margin-left: 10px;
 }
 
 h4 {
@@ -241,6 +281,10 @@ h2 {
   margin-left: 10px;
 }
 
+.decrement:hover {
+  cursor:pointer;
+}
+
 .center {
   height: 20px;
   width: 20px;
@@ -257,6 +301,10 @@ h2 {
   margin-right: 10px;
 }
 
+.increment:hover {
+  cursor:pointer;
+}
+
 .ajoutPanier {
   border: 1px solid orange;
   display: flex;
@@ -267,6 +315,9 @@ h2 {
   background-color: hsl(26, 100%, 55%);
   align-items: center;
   justify-content: center;
+}
+.ajoutPanier:hover {
+  cursor: pointer;
 }
 
 .caddieCard {

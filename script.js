@@ -1,4 +1,5 @@
-// fonction : affichage d'une image dans un div 
+///////////////////// fonction : affichage d'une image dans un div //////////////////////////////////////////////
+
 function ChangeImage(divId,imageNom){
     var divId; // id du div qui va contenir la grande image 
     var imageNom; // nom de la grande image 
@@ -14,8 +15,30 @@ function ViderDiv(divId){
     document.getElementById(divId).innerHTML = '';
 }
 
+///////////////////////////////// fonction modification des pictos au clic //////////////////////////////////////////////
 
-// selecteur click counter
+// fonction : affichage d'une image dans un div 
+
+    
+
+    function addClass (imageId) {
+        var imageId2 = document.getElementById("picto2"); // id du picto
+        // document.querySelectorAll('miniature').classList.remove("selected");// supprimer la classe de la précédente sélection
+        imageId2.classList.add(" selected");
+
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+////////////////////////////////// selecteur click counter///////////////////////////////////////////////////////
 
 let counterVal = 0;
 
@@ -29,4 +52,13 @@ function decrementClick() {
 
 function updateDisplay(val) {
     document.getElementById("counter-label").innerHTML = val; // mise à jour du compteur
+}
+
+
+
+//  fonction griser encadrer picto selectionné
+
+function changeCss() {
+    oDomElement.style.border="1px solid hsl(26, 100%, 55%)";
+    oDomElement.Style.opacity= '0.6';
 }
