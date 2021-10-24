@@ -17,25 +17,39 @@ function ViderDiv(divId){
 
 ///////////////////////////////// fonction modification des pictos au clic //////////////////////////////////////////////
 
-// fonction : affichage d'une image dans un div 
+// fonctions supprimer classe "selected" sur les pictos 
 
+function removeClass() {
+    document.getElementById("picto1").classList.remove("selected")  
+}
+function removeClass2() {
+    document.getElementById("picto2").classList.remove("selected")  
+}
+function removeClass3() {
+    document.getElementById("picto3").classList.remove("selected")  
+}
+function removeClass4() {
+    document.getElementById("picto4").classList.remove("selected")  
+}
+
+// Ajouter la classe selected sur le picto de la photo choisie
+   function addClass() {
+     
+       document.getElementById("picto1").classList.add("selected")
+   }
+   function addClass2() {
     
-
-    function addClass (imageId) {
-        var imageId2 = document.getElementById("picto2"); // id du picto
-        // document.querySelectorAll('miniature').classList.remove("selected");// supprimer la classe de la précédente sélection
-        imageId2.classList.add(" selected");
-
-    }
+       document.getElementById("picto2").classList.add("selected")
+   }
+   function addClass3() {
     
+       document.getElementById("picto3").classList.add("selected")
+   }
+   function addClass4() {
     
-
-
-
-
-
-
-
+       document.getElementById("picto4").classList.add("selected")
+   }
+   
 
 
 ////////////////////////////////// selecteur click counter///////////////////////////////////////////////////////
