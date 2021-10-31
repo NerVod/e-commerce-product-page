@@ -36,7 +36,7 @@
 
   <div class="photosGauche">
 
-      <div id="div-photo">
+      <div id="div-photo" onclick="show();">
       </div>
 
       <div id="picto">
@@ -57,6 +57,40 @@
       </div>
 </div>
 	
+<!------------------------------------------------------------------------>
+<!-----------------------------------MODALE------------------------------->
+<!------------------------------------------------------------------------>
+
+<div id="modale" class="modal show">
+  <span class="close" onclick="hide();">&times;</span>
+  <div class="modal-content">
+    <div id = "modalPhoto"></div>
+  </div>
+
+
+  <div id="pictoModale">
+    <ul class="photoMiniM">
+      <li class="thumbNailM" id="thumbNail1M">
+        <img id="picto1M" class="miniature mini1"  src="./images/image-product-1-thumbnail.jpg" onclick="ChangeImageM('modalPhoto','image-product-1.jpg');removeClass5();removeClass6();removeClass7();removeClass8(); addClass5();" alt="" />
+      </li>
+      <li class="thumbNailM" id="thumbNail2M">
+        <img id="picto2M" class="miniature mini1"  src="./images/image-product-2-thumbnail.jpg" onclick="ChangeImageM('modalPhoto','image-product-2.jpg');removeClass5();removeClass6();removeClass7();removeClass8(); addClass6();" alt="" />
+      </li>
+      <li class="thumbNailM" id="thumbNail3M">
+        <img id="picto3M" class="miniature mini1"  src="./images/image-product-3-thumbnail.jpg" onclick="ChangeImageM('modalPhoto','image-product-3.jpg');removeClass5();removeClass6();removeClass7();removeClass8(); addClass7();" alt="" />
+      </li>
+      <li class="thumbNailM" id="thumbNail4M">
+        <img id="picto4M" class="miniature mini1"  src="./images/image-product-4-thumbnail.jpg" onclick="ChangeImageM('modalPhoto','image-product-4.jpg');removeClass5();removeClass6();removeClass7();removeClass8(); addClass8();" alt="" />
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<!------------------------------------------------------------------------>
+<!-------------------------------FIN MODALE------------------------------->
+<!------------------------------------------------------------------------>
+
 
 
   <div class="partieDroite">

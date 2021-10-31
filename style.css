@@ -16,7 +16,9 @@ body {
   margin: 0 auto;
 }
 
-/* ****************************HEADER************************************** */
+/* ************************************************************************ */
+/* ********************************HEADER********************************** */
+/* ************************************************************************ */
 .navTop {
   display: flex;
   flex-direction: row;
@@ -70,6 +72,12 @@ nav li {
 .avatar {
   height: 50px;
   margin: 5px 40px;
+  border: 2px solid transparent;
+  border-radius: 50% 50%;
+}
+.avatar:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+  
 }
 
 .ligneNav {
@@ -107,7 +115,8 @@ nav li {
   margin-bottom: 20px;
   border-radius: 15px 15px; 
   background-image: url(images/image-product-1.jpg);
-  background-size: cover;   
+  background-size: cover; 
+  cursor: pointer;  
 }
 
 .grandePhoto {
@@ -116,6 +125,7 @@ nav li {
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 15px 15px;
+  cursor:pointer;
 
 }
 
@@ -148,8 +158,12 @@ list-style-type: none;
   width: 87px;
   border-radius: 10px 10px;
   margin: 0 18px;
-  
 }
+
+.miniature:hover {
+  opacity:0.7;
+}
+
 
 #picto1 {
   background-image: url(images/image-product-1-thumbnail.jpg);
@@ -174,8 +188,137 @@ list-style-type: none;
 
 .selected {
   border: 2px solid hsl(26, 100%, 55%);
-  opacity: 0.7;
+  opacity: 0.4;
 }
+
+
+
+/* ********************************************************************** */
+/* ********************************MODALE******************************** */
+/* ********************************************************************** */
+
+#modale{
+  display: none
+}
+
+#modale.show{
+  display:initial;
+}
+
+.modal{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(7, 7, 7, 0.8);
+}
+
+.close {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  color: hsl(26, 100%, 55%);
+  font-size: 3em;
+  align-self: center;
+  margin-right: 30px;
+  cursor: pointer;
+  
+  
+}
+
+
+
+.modal-content{
+  position: relative;
+  margin: 12% auto;
+  border-radius: 15px 15px;
+  width: 550px;
+  height: 550px;
+  border: 1px solid white;
+  
+}
+
+#modalPhoto {
+  width: 550px;
+  height: 550px;
+  background-image: url(images/image-product-1.jpg);
+  background-size: cover;
+  border-radius: 15px 15px;
+ 
+}
+
+.grandePhotoM {
+  height: 550px;
+  width: 550px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 15px 15px;
+
+}
+
+
+#pictoModale {
+  width: 650px;
+  height : 110px;
+  position: relative;
+  top: -80px;
+  margin: 10px auto;
+  
+}
+
+.photoMiniM {
+  display: flex;
+  height: 100px;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.thumbNailM {
+  list-style-type: none;
+  
+  }
+  
+  .thumbNailM:hover {
+    cursor: pointer;
+  }
+
+
+  .selected2 {
+    border: 2px solid hsl(26, 100%, 55%);
+    opacity: 0.6;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************************************************************** */
+/* *****************************FIN MODALE******************************* */
+/* ********************************************************************** */
+
+
+
+
+
 
 
 /* ---------PARTIE DROITE DESCRIPTION PRODUIT------- */
