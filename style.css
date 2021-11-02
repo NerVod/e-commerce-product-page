@@ -42,10 +42,9 @@ body {
 .navItems {
   display: flex;
   list-style-type: none;
-  
 }
 
-.navItems>li:hover {
+.navItems > li:hover {
   cursor: pointer;
   border-bottom: 4px solid hsl(26, 100%, 55%);
   padding-bottom: 50px;
@@ -77,7 +76,6 @@ nav li {
 }
 .avatar:hover {
   border: 2px solid hsl(26, 100%, 55%);
-  
 }
 
 .ligneNav {
@@ -108,15 +106,15 @@ nav li {
   flex-direction: column;
 }
 
- #div-photo{
+#div-photo {
   height: 450px;
   width: 450px;
   margin: 10px auto;
   margin-bottom: 20px;
-  border-radius: 15px 15px; 
+  border-radius: 15px 15px;
   background-image: url(images/image-product-1.jpg);
-  background-size: cover; 
-  cursor: pointer;  
+  background-size: cover;
+  cursor: pointer;
 }
 
 .grandePhoto {
@@ -125,14 +123,12 @@ nav li {
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 15px 15px;
-  cursor:pointer;
-
+  cursor: pointer;
 }
 
-#picto{
+#picto {
   height: 125px;
   width: 550px;
-  
 }
 
 .photoMini {
@@ -146,7 +142,7 @@ nav li {
 }
 
 .thumbNail {
-list-style-type: none;
+  list-style-type: none;
 }
 
 .thumbNail:hover {
@@ -161,9 +157,8 @@ list-style-type: none;
 }
 
 .miniature:hover {
-  opacity:0.7;
+  opacity: 0.7;
 }
-
 
 #picto1 {
   background-image: url(images/image-product-1-thumbnail.jpg);
@@ -191,21 +186,19 @@ list-style-type: none;
   opacity: 0.4;
 }
 
-
-
 /* ********************************************************************** */
 /* ********************************MODALE******************************** */
 /* ********************************************************************** */
 
-#modale{
-  display: none
+#modale {
+  display: none;
 }
 
-#modale.show{
-  display:initial;
+#modale.show {
+  display: initial;
 }
 
-.modal{
+.modal {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -228,22 +221,20 @@ list-style-type: none;
   font-size: 3em;
   align-self: center;
   margin-right: 30px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.close:hover{
+.close:hover {
   color: hsl(26, 100%, 55%);
 }
 
-
-
-.modal-content{
+.modal-content {
   position: relative;
   margin: 12% auto;
   border-radius: 15px 15px;
   width: 550px;
   height: 550px;
-  border: 1px solid white;  
+  border: 1px solid white;
 }
 
 #modalPhoto {
@@ -261,17 +252,14 @@ list-style-type: none;
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 15px 15px;
-
 }
-
 
 #pictoModale {
   width: 650px;
-  height : 110px;
+  height: 110px;
   position: relative;
   top: -80px;
   margin: 10px auto;
-  
 }
 
 .photoMiniM {
@@ -280,47 +268,58 @@ list-style-type: none;
   width: 600px;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .thumbNailM {
   list-style-type: none;
+}
+
+.thumbNailM:hover {
+  cursor: pointer;
+}
+
+.selected2 {
+  border: 2px solid hsl(26, 100%, 55%);
+  opacity: 0.6;
+}
+
+.btn-lightBox {
+  position: relative;
+  height: 55px;
+  width: 55px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: block;
+  top: 45%;
+  display: flex;
+}
+.btn-lightBox:hover {
+  cursor: pointer;
+}
+
+.boutonLeft {
+  position: absolute;
+  left: -25px;
+}
+
+.boutonRight {
+  position: absolute;
+  right: -25px;
+}
+
+.previous {
+  margin: auto;
   
-  }
-  
-  .thumbNailM:hover {
-    cursor: pointer;
-  }
-
-
-  .selected2 {
-    border: 2px solid hsl(26, 100%, 55%);
-    opacity: 0.6;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.next {
+  margin: auto;
+}
 
 
 
 /* ********************************************************************** */
 /* *****************************FIN MODALE******************************* */
 /* ********************************************************************** */
-
-
-
-
-
-
 
 /* ---------PARTIE DROITE DESCRIPTION PRODUIT------- */
 
@@ -426,7 +425,7 @@ h2 {
 }
 
 .decrement:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .center {
@@ -446,7 +445,7 @@ h2 {
 }
 
 .increment:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .ajoutPanier {
